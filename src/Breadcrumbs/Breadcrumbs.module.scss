@@ -1,0 +1,46 @@
+.root {
+  padding: 8px;
+}
+
+.list {
+  display: inline-flex;
+  padding: 0;
+  list-style: none;
+  max-width: 100%;
+}
+
+.item {
+  white-space: nowrap;
+
+  &:not(.lastItem) {
+    &:after {
+      content: '-';
+      display: inline-block;
+      margin: 0 5px;
+    }
+  }
+
+  .link {
+    color: gray;
+  }
+}
+
+.lastItem {
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &:hover,
+  &:focus {
+    cursor: default;
+  }
+}
+
+.link {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: darkslateblue;
+  }
+}
