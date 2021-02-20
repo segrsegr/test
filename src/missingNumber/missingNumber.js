@@ -1,5 +1,5 @@
 export function missingNumber (array) {
-  for (let i = 1; i < array.length; i++) {
+  for (let i = 1;; i++) {
     if (!array.includes(i)) {
       return i
     }
